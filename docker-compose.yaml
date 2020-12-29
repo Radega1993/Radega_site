@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  web-site-radega:
+    image: under_radega
+    build: .
+    restart: always
+    volumes:
+      - "./html/:/var/www/html/"
+    ports:
+      - "8081:80"
+  
